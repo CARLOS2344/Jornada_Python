@@ -1,4 +1,4 @@
-from time import sleep 
+from time import sleep
 def maior(* num):
     if num == ():
         print("Nenhum valor foi passado! ")
@@ -15,7 +15,7 @@ def maior(* num):
         print(f"O maior valor encontrado foi {max(tupla_transformada_em_lista)}! ")
         print("+=" * 30)
 
-    
+
 
 maior(1, 2, 4, 6, 10, 100, -2 , 4)
 maior(10, 2, 4, 5, 99)
