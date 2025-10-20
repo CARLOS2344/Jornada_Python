@@ -3,5 +3,5 @@ _Eu irei mostrar a minha evolução gradativa no Python, ou seja, postarei de te
 
 **Objetivos a serem alcançados:**
 - _Dominar princípios básicos de Python_; 🐍
-- _Começar a estudar blibliotecas de Inteligência Artificial no Python_; 🤖
-- _Dominar as blibliotecas sobre Inteligência Artificial_. 🖥️
+- _Começar a estudar bibliotecas de Inteligência Artificial no Python_; 🤖
+- _Dominar as bibliotecas sobre Inteligência Artificial_. 🖥️
