@@ -1,10 +1,5 @@
-import sys
-import os
-
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-
-from Utilities.Utilidades_CV import moeda
-from Utilities.Mensagem_Personalizada import personalização
+from Gustavo_Guanabara.Utilities.Utilidades_CV import moeda
+from Gustavo_Guanabara.Utilities.Mensagem_Personalizada import personalização
 
 preço = float(input("Digite o preço: R$").strip())
 personalização.mensagem_com_linhas(f"O dobro de R${moeda.moeda(preço)} é R${moeda.dobro_do_número(preço, True)}! ")
