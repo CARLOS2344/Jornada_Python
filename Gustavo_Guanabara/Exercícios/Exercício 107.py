@@ -1,9 +1,9 @@
-from Gustavo_Guanabara.Utilities.Utilidades_CV import moeda
-from Gustavo_Guanabara.Utilities.Mensagem_Personalizada import personalização
+from Utilities.Utilidades_CV import metade_do_número, dobro_do_número, aumento_porcentagem, diminuição_porcentagem # Da pasta "Utilities"(Está no diretório raíz "JORNADA_PYTHON") e dentro de "Utilidades_CV" importei todas as funções de "moeda.py" através do "__init__.py" da pasta "Utilidades.CV".
+from Utilities.Mensagem_Personalizada import mensagem_com_linhas # Da pasta "Utilities"(Está no diretório raíz "JORNADA_PYTHON") e dentro de "Mensagem_Personalizada" importei todas as funções de "personalização" através do "__init__.py" da pasta "Mensagem_Personalizada".
 
-
-preço = float(input("Digite o preço: R$").strip())
-personalização.mensagem_com_linhas(f"A metade de R${preço} é R${moeda.metade_do_número(preço)}! ")
-personalização.mensagem_com_linhas(f"O dobro de R${preço} é R${moeda.dobro_do_número(preço)}! ")
-personalização.mensagem_com_linhas(f"O valor aumentado em 10% é R${moeda.aumento_porcentagem(preço, 10)}! ")
-personalização.mensagem_com_linhas(f"O valor diminuido em 13% é R${moeda.diminuição_porcentagem(preço, 13)}! ")
+# Esse é o programa principal.
+preço = float(input("Digite o preço: R$").strip()) # Com a função "input()" mando o usuário digitar o preço do produto em valor "float".
+mensagem_com_linhas(f"A metade de R${preço} é R${metade_do_número(preço)}! ") # Chamo a função "def" que está na pasta "Mensagem_Personalizada" e faz uma mensagem com linhas, outrossim, chamo no final, outra função "def" da pasta "Utilidades_CV" que vai pegar a metade do número.
+mensagem_com_linhas(f"O dobro de R${preço} é R${dobro_do_número(preço)}! ") # Chamo a função "def" que está na pasta "Mensagem_Personalizada" e faz uma mensagem com linhas, outrossim, chamo no final, outra função "def" da pasta "Utilidades_CV" que vai colocar o dobro do número.
+mensagem_com_linhas(f"O valor aumentado em 10% é R${aumento_porcentagem(preço, 10)}! ") # Chamo a função "def" que está na pasta "Mensagem_Personalizada" e faz uma mensagem com linhas, outrossim, chamo no final, outra função "def" da pasta "Utilidades_CV" que vai ter um aumento percentual no preço.
+mensagem_com_linhas(f"O valor diminuido em 13% é R${diminuição_porcentagem(preço, 13)}! ") # Chamo a função "def" que está na pasta "Mensagem_Personalizada" e faz uma mensagem com linhas, outrossim, chamo no final, outra função "def" da pasta "Utilidades_CV" que vai ter um desconto percentual no preço.

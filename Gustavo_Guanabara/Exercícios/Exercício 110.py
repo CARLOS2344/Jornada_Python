@@ -1,3 +1,3 @@
-from Gustavo_Guanabara.Utilities.Utilidades_CV import moeda2
-preço = float(input('Digite o preço: R$').strip())
-moeda2.resumo(preço, 10, 13)
+from Utilities.Utilidades_CV import resumo # Da pasta "Utilities", dentro dela, a pasta "Utilidades_CV", importo todas as funções do arquivo "moeda2.py".
+preço = float(input('Digite o preço: R$').strip()) # Com a função "input()", peço ao usuário para digitar o preço do produto. Outrossim, coloquei uma formatação "strip()" o qual vai tirar os espaços desncessários.
+resumo(preço, 10, 13) # Chamo a função "resumo" através do "__init__.py" da pasta "Utilidades_CV", logo, coloco o preço, valor percentual maior e valor percentual menor.
