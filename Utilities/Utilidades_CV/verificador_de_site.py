@@ -1,7 +1,7 @@
-import requests
+import requests # Importa-se a biblioteca "requests".
 
 
-def situação_site(link="Digite o link do site: "):
+def situação_site(link="Digite o link do site: "): # Criei a função "def" chamada "situação_site" o qual tem o parâmetro "link"
     try:
         url = input(link).strip()
         requests.head(url)
